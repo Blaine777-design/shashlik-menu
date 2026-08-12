@@ -22,4 +22,4 @@
 
 ## QR-код и печать
 
-QR постоянно ведёт на production URL `https://shashlik.vercel.app/`. Он не требует обновления при изменении блюд, цен, фотографий или дизайна, пока адрес сайта остаётся прежним. Если сам адрес когда-нибудь изменится, замените строку в `assets/qr/production-url.txt` и запустите `python scripts/generate-qr.py`, затем `python scripts/verify-qr.py`. Макет настольной карточки находится в `print/qr-table-card.html`; печатайте его в масштабе 100% на формате A6.
+QR постоянно ведёт на production URL `https://shashlik-menu-kn85.vercel.app/`. Готовые файлы: `assets/qr/shashlik-menu-qr.png` и `assets/qr/shashlik-menu-qr.svg`. QR не требует обновления при изменении блюд, цен, фотографий или дизайна, пока адрес сайта остаётся прежним. Если сам адрес когда-нибудь изменится, замените строку в `assets/qr/production-url.txt` и запустите `python scripts/generate-qr.py`, затем `python scripts/verify-qr.py`. Макет настольной карточки находится в `print/qr-table-card.html`; печатайте его в масштабе 100% на формате A6.
