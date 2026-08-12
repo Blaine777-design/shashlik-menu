@@ -10,7 +10,12 @@
   <meta property="og:description" content="Мясо на мангале • Домашняя кухня">
   <meta property="og:image" content="assets/images/hero.jpg">
   <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="css/style.css?v=2">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Prata&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Prata&display=swap"></noscript>
+  <link rel="preload" href="assets/images/hero-grill-768.webp" as="image" type="image/webp" imagesrcset="assets/images/hero-grill-768.webp 768w, assets/images/hero-grill-1280.webp 1280w, assets/images/hero-grill-1920.webp 1920w" imagesizes="100vw" fetchpriority="high">
+  <link rel="stylesheet" href="css/style.css?v=3">
 </head>
 <body>
   <a class="skip-link" href="#menu">Перейти к меню</a>
@@ -21,11 +26,12 @@
   <main id="top">
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-copy">
+        <strong class="hero-name">Угли</strong>
         <p class="hero-subtitle">Мясо на мангале <i></i> Домашняя кухня</p>
         <h1 id="hero-title">Готовим на огне.<br>Подаём с душой.</h1>
         <p>Выберите категорию и ознакомьтесь с нашим меню</p>
       </div>
-      <div class="hero-art" aria-hidden="true"><span>УГЛИ</span><small>настоящий вкус</small></div>
+      <div class="hero-art" aria-hidden="true"><img src="assets/images/hero-grill-1280.webp" srcset="assets/images/hero-grill-768.webp 768w, assets/images/hero-grill-1280.webp 1280w, assets/images/hero-grill-1920.webp 1920w" sizes="(max-width: 599px) 100vw, 55vw" width="1920" height="1029" alt="" fetchpriority="high" decoding="async"></div>
     </section>
     <div class="menu-tools">
       <nav class="categories" aria-label="Категории меню"><div id="category-list"></div></nav>
@@ -47,6 +53,6 @@
       <div class="sheet-copy"><h2 id="sheet-title"></h2><p id="sheet-meta"></p><p class="waiter">Для заказа назовите блюдо официанту</p></div>
     </section>
   </div>
-  <script src="js/menu-data.js"></script><script src="js/main.js"></script>
+  <script defer src="js/menu-data.js?v=3"></script><script defer src="js/main.js?v=3"></script>
 </body>
 </html>
