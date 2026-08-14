@@ -1,6 +1,6 @@
 const menuRoot=document.querySelector('#menu'),categoryList=document.querySelector('#category-list'),search=document.querySelector('#search'),empty=document.querySelector('#empty');
 const escapeHtml=s=>s.replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
-const icon={meat:'⌁',hot:'♨',salads:'❋',sides:'◇',sauces:'◒',drinks:'◉'};
+const icon={meat:'⌁',hot:'♨',salads:'❋',sides:'◇',sauces:'◒',bread:'▱',drinks:'◉'};
 function nav(){categoryList.innerHTML=menu.map((g,i)=>`<a href="#${g.id}" class="${i?'':'active'}" data-id="${g.id}"><b>${icon[g.id]}</b><span>${g.category}</span></a>`).join('')}
 function render(query=''){
  const q=query.trim().toLocaleLowerCase('ru'); let count=0;
